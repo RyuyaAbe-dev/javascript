@@ -5,15 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="weather.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="weather.js">
+    </script>
 </head>
 <body>
-    <h1>fecthで外部ドメインのxmlファイルをスクレイピングしよう！</h1>
 
-    <ul>
-    <div id="info"></div>
-    </ul>
-
-    <a href="https://www.anzen.mofa.go.jp/">海外安全情報</a>、<a href="https://creativecommons.org/licenses/by/4.0/deed.ja">CC BY 4.0</a>
+    <div class="input-block">
+        <div class="select-block">
+          <label>大分類：
+            <select id="category-select-1">
+              <option>選択してください</option>
+            </select>
+          </label>
+        </div>
+        <div class="select-block">
+          <label>小分類：
+            <select id="sub-category-select-1">
+              <option>選択してください</option>
+            </select>
+          </label>
+        </div>
+      </div>
 </body>
 </html>
